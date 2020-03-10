@@ -1,0 +1,113 @@
+<html>
+    <head>
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Password" href="password authentication.html">
+</head>
+<body>
+    <center>
+    <div class="loader_bg">
+        <div class="loader" style="font-weight: bold;" style="margin-left: auto;" style="margin-right: auto;" style="padding-top: 20%;">
+            to our website!!!!!
+        </div>           
+
+    </div>
+    <div class="loader_bg1">
+        <div class="loader1 " style="font-weight: bold;" style="margin-left: auto;" style="margin-right: auto;" style="padding-top: 20%;">
+            Welcome!!!!!
+        </div>
+    </div>
+        <div class="loader_bg2">
+            <div class="loader2" style="font-weight: bold;" style="margin-left: auto;" style="margin-right: auto;" style="padding-top: 20%;">
+                hi!!!!!
+            </div>
+        </div>
+    </center>
+    <h1>Fields</h1>
+    <Form>
+       <label>Name</label>
+       <input type="text" placeholder="Name"><br/><br/>
+       <label>Address</label>
+       <input type="text" placeholder="Address"><br/><br/>
+       <label>Mobile No</label>
+       <input type="text" placeholder="Mobile No"><br/><br/>
+       <label>Ocupation</label>
+       <input type="text" placeholder="Ocupation"><br/><br/>
+       <label>Password</label>
+       <input type="text" placeholder="Enter a Password"><br/><br/>
+       <label> Confirm Password</label>
+       <input type="text" placeholder="Enter a ConfirmPassword"><br/><br/>
+       <button>Submit</button>
+             
+</Form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+class Authentication(object):
+def_init_(self,username=''):
+self.username=username
+
+def _lower(self):
+lower=any(c.islower() for c in self.username)
+return lower
+
+def _upper(self):
+upper=any(c.isuppper() for c in self.username)
+return upper
+
+def _digit(self):
+digit=any(c.isdigit() for c in self.username)
+return digit
+
+def validate(self):
+lower=self._lower()
+upper=self._upper()
+digit=self._digit()
+length=len(self.username)
+
+report=lower and upper and digit and length>=6:
+
+if report:
+print("Username passed all checks")
+return True
+
+elseif not lower:
+print("You didnt use lower case letter")
+return false
+
+elseif not upper:
+print("You didnt use upper case letter")
+return false
+
+elseif not length<6:
+print("Username should atleast have 6 characters")
+return false
+
+elseif not digit:
+print("You didnt use digit")
+return false
+
+else:
+pass
+
+C=Authentication("Vivekpandey")
+print(C.validate())
+</script>
+<script>
+
+
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    },  3000);
+    setTimeout(function(){
+        $('.loader_bg1').fadeToggle();
+    },  2000);
+    setTimeout(function(){
+        $('.loader_bg2').fadeToggle();
+    },  1000);
+
+    
+    
+</script>
+</body>
+
+
+</html> 
